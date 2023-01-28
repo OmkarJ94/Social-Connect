@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React,{useEffect} from 'react'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import Footer from '../../components/Footer'
+import Navbar from '../../components/Navbar'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 const Notification = ({ navigation }) => {
 

@@ -11,7 +11,7 @@ import Otp from './src/screens/SignUp_or_Login/Otp';
 import EnterPasswords from './src/screens/SignUp_or_Login/EnterPasswords';
 import Allchats from './src/screens/Chats/Allchats';
 import Search from './src/screens/Profile/Search';
-import Notification from './src/screens/Notification';
+import Notification from './src/screens/Profile/Notification';
 import User from './src/screens/Profile/User';
 import Setting from './src/screens/Settings/Setting';
 import ChnagePassword from './src/screens/Settings/ChnagePassword';
