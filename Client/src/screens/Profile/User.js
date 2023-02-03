@@ -79,7 +79,6 @@ const User = ({ navigation }) => {
       fetchData(JSON.parse(data));
 
     }).catch((err) => {
-
       alert("Something Went Wrong")
 
     })

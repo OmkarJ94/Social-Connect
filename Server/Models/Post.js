@@ -3,11 +3,9 @@ const mongoose = require('mongoose')
 const Post = mongoose.Schema({
     username: {
         type: String,
-        unique: true,
     },
     email: {
         type: String,
-        unique: true,
         trim: true,
         // required: [true, "email required."],
         required: true

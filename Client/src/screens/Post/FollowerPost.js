@@ -6,11 +6,14 @@ import PostCard from './PostCard';
 import { ip, key } from "@env"
 import AsyncStorage from '@react-native-async-storage/async-storage';
 const FollowerPost = () => {
+
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(false)
 
     const fetchData = async (token) => {
         try {
+            setLoading(true)
+
             const data = await fetch(`${ip}/getpost`, {
                 method: "POST",
                 headers: {
@@ -19,19 +22,21 @@ const FollowerPost = () => {
                 },
             })
             const result = await data.json();
-
+  
             if (data.status === 200) {
                 setPosts(result);
 
             }
             else {
+                console.log("here")
                 alert("Something Went Wrong")
             }
         } catch (error) {
-
+            console.log(error)
             alert("Something Went Wrong")
 
         }
+        setLoading(false)
     }
 
 

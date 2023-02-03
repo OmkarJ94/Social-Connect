@@ -29,7 +29,7 @@ const PostCard = ({ post }) => {
                 })
             })
             const result = await data.json();
- 
+
             if (data.status === 200) {
 
                 setComments(result);
@@ -64,7 +64,7 @@ const PostCard = ({ post }) => {
                 alert("Something Went Wrong")
             }
         } catch (error) {
-    
+
             alert("Something Went Wrong")
 
         }
@@ -93,7 +93,7 @@ const PostCard = ({ post }) => {
 
             }
         } catch (error) {
-    
+
             alert("please try again");
 
         }
@@ -128,7 +128,7 @@ const PostCard = ({ post }) => {
                 setCurrentComment("")
             }
         } catch (error) {
-  
+
             alert("Please try again")
         }
     }

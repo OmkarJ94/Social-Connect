@@ -137,7 +137,7 @@ const AddPost = ({ navigation }) => {
             }
 
         } catch (error) {
-            
+            console.log(error.message)
             alert("Something Went Wrong");
         }
         setLoading1(false);
